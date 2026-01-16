@@ -1,13 +1,13 @@
-# Devanagari Manuscript OCR (AI)
+# Devanagari OCR AI
 
-End-to-end AI system for reading damaged handwritten Devanagari text.
+Streamlit-ready OCR system for handwritten Devanagari manuscripts.
+
+## Stack
+- Python 3.10
+- PyTorch
+- OpenCV (headless)
+- Streamlit
 
 ## Run
 pip install -r requirements.txt
 streamlit run app.py
-
-## Features
-- Image enhancement
-- CRNN OCR
-- Confidence scoring
-- Streamlit UI
