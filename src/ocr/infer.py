@@ -1,6 +1,7 @@
 import torch
 from .model import CRNN
 
+# Characters to recognize
 CHARS = [""] + list("अआइईउऊएऐओऔकखगघचछजझटठडढतथदधनपफबभमयरलवशषसह")
 IDX2CHAR = {i:c for i,c in enumerate(CHARS)}
 
@@ -8,17 +9,16 @@ def greedy_decode(output):
     probs = torch.softmax(output, dim=2)
     best = probs.argmax(2)
     conf = probs.max(2)[0].mean().item()
-
     prev = -1
     text = ""
     for t in best[0]:
         if t != prev and t != 0:
             text += IDX2CHAR[t.item()]
         prev = t
-
     return text, conf
 
 def run_ocr(image):
+    # TODO: Replace with trained model path or load checkpoint
     model = CRNN(num_classes=len(CHARS))
     model.eval()
 

@@ -1,13 +1,38 @@
-# Devanagari OCR AI
+# \# Devanagari OCR AI
 
-Streamlit-ready OCR system for handwritten Devanagari manuscripts.
+# 
 
-## Stack
-- Python 3.10
-- PyTorch
-- OpenCV (headless)
-- Streamlit
+# Streamlit-ready OCR system for handwritten Devanagari manuscripts.
 
-## Run
-pip install -r requirements.txt
-streamlit run app.py
+# 
+
+# \## Features
+
+# \- Image preprocessing / enhancement
+
+# \- Character-level CRNN OCR
+
+# \- Confidence scoring
+
+# \- Export to DOCX or PDF
+
+# 
+
+# \## Deployment
+
+# \- Python 3.10
+
+# \- opencv-python-headless
+
+# \- Streamlit
+
+# 
+
+# \## Run
+
+# pip install -r requirements.txt
+
+# streamlit run app.py
+
+# 
+
